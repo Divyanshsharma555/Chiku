@@ -1,4 +1,4 @@
-# Chiku ❤️
+# Chiku
 
 A premium romantic website made with only **HTML, CSS, and JavaScript** — no frameworks.
 
@@ -6,9 +6,9 @@ A premium romantic website made with only **HTML, CSS, and JavaScript** — no f
 
 ---
 
-## What’s inside
+## What's inside
 
-- Cinematic hero with floating hearts & glow
+- Cinematic hero with floating hearts and glow
 - Live together-counter (from Dec 2024)
 - 5 flipping love cards with photos
 - Masonry memories gallery + lightbox
