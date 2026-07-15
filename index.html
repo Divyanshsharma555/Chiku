@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>You Mean The World To Me</title>
+  <meta name="description" content="A premium romantic love letter website." />
+
+  <!-- Premium Typography: Cormorant Garamond + Karla -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Great+Vibes&family=Karla:wght@300;400;500;600&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Cursor glow -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- Ambient layer: floating hearts, particles, butterflies -->
+  <div class="ambient" id="ambient" aria-hidden="true"></div>
+  <div class="film-grain" aria-hidden="true"></div>
+  <div class="vignette" aria-hidden="true"></div>
+
+  <!-- ========== HERO ========== -->
+  <header class="hero" id="hero">
+    <div class="hero-orbs" aria-hidden="true">
+      <span class="orb orb-1"></span>
+      <span class="orb orb-2"></span>
+      <span class="orb orb-3"></span>
+    </div>
+
+    <nav class="nav">
+      <a href="#hero" class="nav-brand">Forever Ours</a>
+      <div class="nav-links">
+        <a href="#counter">Time</a>
+        <a href="#cards">Love</a>
+        <a href="#gallery">Memories</a>
+        <a href="#letter">Letter</a>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <p class="hero-kicker reveal">A love story written in heartbeats</p>
+      <h1 class="hero-title reveal">You Mean The World To Me <span class="heart-inline">❤️</span></h1>
+
+      <div class="hero-heartbeat" aria-hidden="true">
+        <svg class="pulse-heart" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+      </div>
+
+      <p class="hero-sub reveal">Every heartbeat of mine has your name.</p>
+
+      <div class="hero-cta reveal">
+        <a href="#counter" class="btn btn-primary ripple">❤️ Our Journey</a>
+        <a href="#letter" class="btn btn-ghost ripple">💌 Read My Letter</a>
+      </div>
+    </div>
+
+    <a href="#counter" class="scroll-down" aria-label="Scroll down">
+      <span>Scroll Down</span>
+      <svg class="scroll-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+        <path d="M12 5v14M5 12l7 7 7-7"/>
+      </svg>
+    </a>
+  </header>
+
+  <main>
+    <!-- ========== COUNTER ========== -->
+    <section class="section counter-section" id="counter">
+      <div class="container">
+        <p class="section-kicker reveal">Chapter I</p>
+        <h2 class="section-title reveal">We Have Been Together</h2>
+        <p class="section-sub reveal">Every second with you is a gift I treasure.</p>
+
+        <div class="counter-card glass reveal">
+          <div class="counter-grid" id="loveCounter">
+            <div class="counter-item">
+              <span class="counter-value" data-unit="years">0</span>
+              <span class="counter-label">Years</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter-value" data-unit="months">0</span>
+              <span class="counter-label">Months</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter-value" data-unit="days">0</span>
+              <span class="counter-label">Days</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter-value" data-unit="hours">0</span>
+              <span class="counter-label">Hours</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter-value" data-unit="minutes">0</span>
+              <span class="counter-label">Minutes</span>
+            </div>
+            <div class="counter-item">
+              <span class="counter-value" data-unit="seconds">0</span>
+              <span class="counter-label">Seconds</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== LOVE CARDS ========== -->
+    <section class="section cards-section" id="cards">
+      <div class="container">
+        <p class="section-kicker reveal">Chapter II</p>
+        <h2 class="section-title reveal">Pieces of My Heart</h2>
+        <p class="section-sub reveal">Click each card to reveal a memory tucked inside.</p>
+
+        <div class="love-cards">
+          <!-- Card 1 -->
+          <article class="flip-card float-card reveal" tabindex="0" data-card="1">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="card-icon">❤️</span>
+                <h3>Why I Love You</h3>
+                <p class="card-hint">Tap to open</p>
+              </div>
+              <div class="flip-back">
+                <div class="card-photo">
+                  <img src="images/card1.jpg" alt="Why I Love You" loading="lazy" />
+                  <div class="card-photo-overlay glass-overlay"></div>
+                </div>
+                <p class="card-quote">You make ordinary days feel extraordinary.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="flip-card float-card reveal" tabindex="0" data-card="2">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="card-icon">🌹</span>
+                <h3>My Favourite Person</h3>
+                <p class="card-hint">Tap to open</p>
+              </div>
+              <div class="flip-back">
+                <div class="card-photo">
+                  <img src="images/card2.jpg" alt="My Favourite Person" loading="lazy" />
+                  <div class="card-photo-overlay glass-overlay"></div>
+                </div>
+                <p class="card-quote">You are my safe place and my biggest happiness.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="flip-card float-card reveal" tabindex="0" data-card="3">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="card-icon">✨</span>
+                <h3>Forever Promise</h3>
+                <p class="card-hint">Tap to open</p>
+              </div>
+              <div class="flip-back">
+                <div class="card-photo">
+                  <img src="images/card3.jpg" alt="Forever Promise" loading="lazy" />
+                  <div class="card-photo-overlay glass-overlay"></div>
+                </div>
+                <p class="card-quote">No matter what happens,<br />I'll always choose you.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 4 -->
+          <article class="flip-card float-card reveal" tabindex="0" data-card="4">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="card-icon">💕</span>
+                <h3>Lucky To Have You</h3>
+                <p class="card-hint">Tap to open</p>
+              </div>
+              <div class="flip-back">
+                <div class="card-photo">
+                  <img src="images/card4.jpg" alt="Lucky To Have You" loading="lazy" />
+                  <div class="card-photo-overlay glass-overlay"></div>
+                </div>
+                <p class="card-quote">Meeting you was my favourite coincidence.</p>
+              </div>
+            </div>
+          </article>
+
+          <!-- Card 5 -->
+          <article class="flip-card float-card reveal" tabindex="0" data-card="5">
+            <div class="flip-inner">
+              <div class="flip-front">
+                <span class="card-icon">🌙</span>
+                <h3>Always Together</h3>
+                <p class="card-hint">Tap to open</p>
+              </div>
+              <div class="flip-back">
+                <div class="card-photo">
+                  <img src="images/card5.jpg" alt="Always Together" loading="lazy" />
+                  <div class="card-photo-overlay glass-overlay"></div>
+                </div>
+                <p class="card-quote">My heart is happiest whenever you're beside me.</p>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== MEMORIES GALLERY ========== -->
+    <section class="section gallery-section" id="gallery">
+      <div class="container">
+        <p class="section-kicker reveal">Chapter III</p>
+        <h2 class="section-title reveal">Our Beautiful Memories</h2>
+        <p class="section-sub reveal">Moments that still make my heart skip a beat.</p>
+
+        <div class="masonry" id="masonry">
+          <figure class="masonry-item tall reveal" data-index="0">
+            <img src="images/memory1.jpg" alt="Memory 1" loading="lazy" />
+            <figcaption class="masonry-caption glass-overlay"><span>Memory 01</span></figcaption>
+          </figure>
+          <figure class="masonry-item reveal" data-index="1">
+            <img src="images/memory2.jpg" alt="Memory 2" loading="lazy" />
+            <figcaption class="masonry-caption glass-overlay"><span>Memory 02</span></figcaption>
+          </figure>
+          <figure class="masonry-item wide reveal" data-index="2">
+            <img src="images/memory3.jpg" alt="Memory 3" loading="lazy" />
+            <figcaption class="masonry-caption glass-overlay"><span>Memory 03</span></figcaption>
+          </figure>
+          <figure class="masonry-item reveal" data-index="3">
+            <img src="images/memory4.jpg" alt="Memory 4" loading="lazy" />
+            <figcaption class="masonry-caption glass-overlay"><span>Memory 04</span></figcaption>
+          </figure>
+          <figure class="masonry-item tall reveal" data-index="4">
+            <img src="images/memory5.jpg" alt="Memory 5" loading="lazy" />
+            <figcaption class="masonry-caption glass-overlay"><span>Memory 05</span></figcaption>
+          </figure>
+          <figure class="masonry-item reveal" data-index="5">
+            <img src="images/memory6.jpg" alt="Memory 6" loading="lazy" />
+            <figcaption class="masonry-caption glass-overlay"><span>Memory 06</span></figcaption>
+          </figure>
+          <figure class="masonry-item reveal" data-index="6">
+            <img src="images/memory7.jpg" alt="Memory 7" loading="lazy" />
+            <figcaption class="masonry-caption glass-overlay"><span>Memory 07</span></figcaption>
+          </figure>
+          <figure class="masonry-item wide reveal" data-index="7">
+            <img src="images/memory8.jpg" alt="Memory 8" loading="lazy" />
+            <figcaption class="masonry-caption glass-overlay"><span>Memory 08</span></figcaption>
+          </figure>
+          <figure class="masonry-item tall reveal" data-index="8">
+            <img src="images/memory9.jpg" alt="Memory 9" loading="lazy" />
+            <figcaption class="masonry-caption glass-overlay"><span>Memory 09</span></figcaption>
+          </figure>
+          <figure class="masonry-item reveal" data-index="9">
+            <img src="images/memory10.jpg" alt="Memory 10" loading="lazy" />
+            <figcaption class="masonry-caption glass-overlay"><span>Memory 10</span></figcaption>
+          </figure>
+          <figure class="masonry-item reveal" data-index="10">
+            <img src="images/memory11.jpg" alt="Memory 11" loading="lazy" />
+            <figcaption class="masonry-caption glass-overlay"><span>Memory 11</span></figcaption>
+          </figure>
+          <figure class="masonry-item wide reveal" data-index="11">
+            <img src="images/memory12.jpg" alt="Memory 12" loading="lazy" />
+            <figcaption class="masonry-caption glass-overlay"><span>Memory 12</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Lightbox -->
+    <div class="lightbox" id="lightbox" hidden>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close">&times;</button>
+      <button class="lightbox-nav prev" id="lightboxPrev" aria-label="Previous">&#10094;</button>
+      <div class="lightbox-content">
+        <img id="lightboxImage" src="" alt="Memory preview" />
+        <p class="lightbox-counter" id="lightboxCounter">1 / 12</p>
+      </div>
+      <button class="lightbox-nav next" id="lightboxNext" aria-label="Next">&#10095;</button>
+    </div>
+
+    <!-- ========== LOVE LETTER ========== -->
+    <section class="section letter-section" id="letter">
+      <div class="container">
+        <p class="section-kicker reveal">Chapter IV</p>
+        <h2 class="section-title reveal">A Letter For You</h2>
+
+        <article class="letter-paper reveal">
+          <div class="letter-seal" aria-hidden="true">❤️</div>
+          <h3 class="letter-heading">My Dearest Chiku,</h3>
+          <div class="letter-body">
+            <p class="dropcap">
+              Chiku, you are the best memory I have ever had in my life.
+              Teri ankhen… unme kho jane ka man karta hai. Teri baatein toh poocho mat —
+              aur tere hoth, jinse woh baat nikalti hai, unme toh doob jane ka man karta hai.
+            </p>
+            <p>
+              Teri pyaari si smile mujhe baar baar jeet leti hai.
+              Aur toh aur, teri baaton mein interest na aaye — aisa kaise ho sakta hai bhala, Chikudaa?
+              Tere saath bitaye har ek pal yaadgaar hai.
+              Tere saath na hokar bhi, apne video calls se hum kitne connected hain.
+            </p>
+            <p>
+              Teri sundarta mujhe har roz teri ore kheenchti hai,
+              aur mera pyaar tere liye har din badhta ja raha hai… har din.
+              Pyaar bhi chhota shabd hai apne bond ke aage —
+              isse ishq se bhi kuch badhkar hi kahenge.
+            </p>
+            <p>
+              Teri care karne mein mujhe maza aata hai.
+              Tujhe bacche ki tarah rakhne mein maza aata hai.
+              Tujhe sar aankhon pe rakhne mein maza aata hai.
+            </p>
+            <p>
+              And one more thing — my patent line, only for you:
+            </p>
+            <p class="letter-patent">
+              “I love them only because they have half of u in them.”
+            </p>
+          </div>
+          <footer class="letter-signoff">
+            <p>Forever Yours,</p>
+            <p class="signature">❤️ Divyansh</p>
+          </footer>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== REASONS I SMILE (TIMELINE) ========== -->
+    <section class="section timeline-section" id="reasons">
+      <div class="container">
+        <p class="section-kicker reveal">Chapter V</p>
+        <h2 class="section-title reveal">Reasons I Smile</h2>
+        <p class="section-sub reveal">Little things that light up my whole world.</p>
+
+        <div class="timeline">
+          <div class="timeline-line" aria-hidden="true"></div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-icon">✨</span>
+              <h3>Your Smile</h3>
+              <p>It turns the ordinary into something golden.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-icon">❤️</span>
+              <h3>Your Kindness</h3>
+              <p>The gentlest heart I've ever known.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-icon">🌹</span>
+              <h3>Your Care</h3>
+              <p>You notice the things no one else sees.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-icon">💕</span>
+              <h3>Your Voice</h3>
+              <p>My favourite sound in the entire world.</p>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="timeline-icon">🌙</span>
+              <h3>Our Memories</h3>
+              <p>A galaxy of moments I'll never stop replaying.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SURPRISE ========== -->
+    <section class="section surprise-section" id="surprise">
+      <div class="container surprise-inner">
+        <p class="section-kicker reveal">One Last Thing</p>
+        <h2 class="section-title reveal">A Little Surprise</h2>
+        <button class="surprise-btn ripple reveal" id="surpriseBtn" type="button">
+          Click Me ❤️
+        </button>
+        <p class="surprise-message" id="surpriseMessage" aria-live="polite"></p>
+      </div>
+      <canvas id="confettiCanvas" aria-hidden="true"></canvas>
+    </section>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="site-footer">
+    <p class="footer-quote">
+      Every love story is beautiful,<br />
+      but ours is my favourite.
+    </p>
+    <div class="footer-heart" aria-hidden="true">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+      </svg>
+    </div>
+    <p class="footer-copy">Made with endless love</p>
+  </footer>
+
+  <!-- ========== FLOATING MUSIC PLAYER ========== -->
+  <div class="music-player glass" id="musicPlayer">
+    <button class="music-toggle" id="musicToggle" type="button" aria-label="Play music">
+      <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+      <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" hidden><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+    </button>
+    <div class="music-meta">
+      <span class="music-title">I Thought I Saw Your Face Today</span>
+      <div class="music-progress-wrap">
+        <input type="range" class="music-progress" id="musicProgress" min="0" max="100" value="0" aria-label="Song progress" />
+      </div>
+    </div>
+    <div class="music-volume-wrap">
+      <svg class="volume-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M3 10v4h4l5 5V5L7 10H3zm13.5 2c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg>
+      <input type="range" class="music-volume" id="musicVolume" min="0" max="1" step="0.01" value="0.6" aria-label="Volume" />
+    </div>
+    <audio id="loveSong" src="music/perfect.mp3" preload="metadata"></audio>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
